@@ -6,7 +6,7 @@ console.log(doubleValues(intArr)); // [2, 4, 6, 8]
 //ex2
 let intArr2 = [1, 2, 3, 4];
 let onlyEvenValues = (intArr) => intArr.filter((num) => num % 2 == 0);
-console.log(onlyEvenValues(intArr2))[(2, 4)];
+console.log(onlyEvenValues(intArr2)); // [(2, 4)]
 
 //ex3
 let showFirstAndLast = (arr) => [
@@ -39,3 +39,37 @@ let capitalize = (str) =>
     )
     .join("");
 console.log(capitalize("Ariel 1@אa")); // ARIEL 1@אA
+
+//ex6
+const LOWER_A = "a".charCodeAt(0);
+const LOWER_Z = "z".charCodeAt(0);
+const UPPER_A = "A".charCodeAt(0);
+const UPPER_Z = "Z".charCodeAt(0);
+const ALPHABET_LENGTH = 26;
+
+const shiftLetter = (char) => {
+  const code = char.charCodeAt(0);
+  if (code >= LOWER_A && code <= LOWER_Z) {
+    // Lowercase
+    return String.fromCharCode(
+      ((code - LOWER_A - 1 + ALPHABET_LENGTH) % ALPHABET_LENGTH) + LOWER_A
+    );
+  }
+  if (code >= UPPER_A && code <= UPPER_Z) {
+    // Uppercase
+    return String.fromCharCode(
+      ((code - UPPER_A - 1 + ALPHABET_LENGTH) % ALPHABET_LENGTH) + UPPER_A
+    );
+  }
+  return char;
+};
+const shiftLetters = (str) => str.split("").map(shiftLetter).join("");
+console.log(shiftLetters("abc XYZ")); // zab WXY
+
+//ex7
+let swapCase = (str) =>
+  str
+    .split(" ")
+    .map((word, idx) => (idx % 2 === 1 ? capitalize(word) : word))
+    .join(" ");
+console.log(swapCase("hello world this is a test")); // hello WORLD this IS a TEST
