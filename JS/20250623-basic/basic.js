@@ -45,5 +45,3 @@ mixedArr.forEach(val => {
   if(val === null) counts.null++
   else counts[typeof val]++
 })
-
-
