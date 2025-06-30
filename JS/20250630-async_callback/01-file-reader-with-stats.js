@@ -1,9 +1,9 @@
-import fs from "fs";
+import { stat, readFile } from "fs";
 
 let filePath = "example_file.txt";
 
-function readFileStats(filePath) {
-  fs.stat(filePath, (err, stats) => {
+export function readFileStats(filePath) {
+  stat(filePath, (err, stats) => {
     if (err) {
       console.log(err);
       return;
@@ -14,8 +14,8 @@ function readFileStats(filePath) {
   });
 }
 
-function readFileWithStats(filePath) {
-  fs.readFile(filePath, "utf-8", (err, data) => {
+export function readFileWithStats(filePath) {
+  readFile(filePath, "utf-8", (err, data) => {
     if (err) {
       console.log(err);
       return;
