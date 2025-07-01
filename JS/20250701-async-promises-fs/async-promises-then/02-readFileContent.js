@@ -1,4 +1,5 @@
 // Exercise 2: Read a File with Promise (with .then)
+// Usage: node 02-readFileContent.js <filePath>
 const fs = require("fs");
 
 const readFileContent = (path) =>
