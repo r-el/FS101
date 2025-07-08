@@ -7,5 +7,9 @@
 [submodule "JS/20250701-async-promises-fs/CRUD-on-text-using-fs"]
 	path = JS/week-20250706/20250708-express/express-intro
 	url = https://github.com/rel770/express-intro.git
+[submodule "JS/20250706/"]
+	path = JS/week-20250706/20250707-riddles-server/riddles-server
+	url = https://github.com/r-el/riddles-server
+
 
 
