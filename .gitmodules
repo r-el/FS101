@@ -1,6 +1,6 @@
 [submodule "JS/20250626-riddles-project"]
-	path = JS/20250626-riddles-project
+	path = JS/week-20250622/20250626-riddles-project
 	url = https://github.com/r-el/riddles.git
 [submodule "JS/20250701-async-promises-fs/CRUD-on-text-using-fs"]
-	path = JS/20250701-async-promises-fs/CRUD-on-text-using-fs
+	path = JS/week-20250629/20250701-async-promises-fs/CRUD-on-text-using-fs
 	url = https://github.com/r-el/CRUD-on-text-using-fs.git
