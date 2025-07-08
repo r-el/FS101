@@ -1,15 +1,18 @@
-[submodule "JS/20250626-riddles-project"]
+[submodule "JS/week-20250622/20250626-riddles-project"]
 	path = JS/week-20250622/20250626-riddles-project
 	url = https://github.com/r-el/riddles.git
-[submodule "JS/20250701-async-promises-fs/CRUD-on-text-using-fs"]
+[submodule "JS/week-20250629/20250701-async-promises-fs/CRUD-on-text-using-fs"]
 	path = JS/week-20250629/20250701-async-promises-fs/CRUD-on-text-using-fs
 	url = https://github.com/r-el/CRUD-on-text-using-fs.git
-[submodule "JS/20250701-async-promises-fs/CRUD-on-text-using-fs"]
+[submodule "JS/week-20250706/20250708-express/express-intro"]
 	path = JS/week-20250706/20250708-express/express-intro
 	url = https://github.com/rel770/express-intro.git
-[submodule "JS/20250706/"]
+[submodule "JS/week-20250706/20250707-riddles-server/riddles-server"]
 	path = JS/week-20250706/20250707-riddles-server/riddles-server
 	url = https://github.com/r-el/riddles-server
+[submodule "JS/week-20250629/20250701-async-promises-fs/CRUD-on-text-using-fs"]
+	path = JS/week-20250629/20250701-async-promises-fs/CRUD-on-text-using-fs
+	url = https://github.com/r-el/CRUD-on-text-using-fs
 
 
 
